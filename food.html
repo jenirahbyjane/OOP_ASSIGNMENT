@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canada Food</title>
+    <link rel="stylesheet" href="../public/main.css" type="text/css" />
+    <link rel="stylesheet" href="weather.css" />
+    <link rel="stylesheet" href="photon.min.css" />
+    
+</head>
+<body>
+    <section class="header">
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="weather.html">WEATHER</a></li>
+                <li><a href="food.html">FOOD</a></li>
+            </ul>
+        </div>
+    </section>
+    <strong><h3>CANADA FOOD :</h3></strong> 
+        <select name="location" id="meal-input" required>
+        <option value="">Find your food</option>
+            <option>BeaverTails</option> 
+            <option>Tourtiere</option>
+            <option>Pate Chinois</option>
+            <option>Poutine</option>
+            <option>Timbits</option>
+        </select>
+
+      <input id="meal-button" type="submit" value="Search"/>
+      <ul id="meal-list"></ul>
+
+      <section class="box">
+        <script src="food.js"></script>
+      </section>
+</body>
+
+</html>
