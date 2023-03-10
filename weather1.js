@@ -14,15 +14,14 @@ weatherButton.addEventListener('click', () => {
           data.weather.forEach(weather => {
             // Create a new list item 
             const newWeather = document.createElement('li');
+            const temperature = Math.round(data.main.temp - 273.15)
             newWeather.innerHTML = `
-            <h1>${data.name}</h1>
-            <h1>${data.sys.country}</h1>
-            <p>Temprature: ${data.main.temp}°C<p>
-            <p>Humidity: ${data.main.humidity}<p>
-            <p>Wind: ${data.main.speed}<p>
-            <p>${data.weather[0].description}<p>
-            <p>${data.sys.sunrise}<p>
-            <p>${data.sys.sunset}<p>
+            <h1> Country: ${data.sys.country}</h1>
+            <h2>City: ${data.name}</h2>
+            <p>Temprature: ${temperature}°C<p>
+            <p>Humidity: ${data.main.humidity}%<p>
+            <p>Wind: ${data.wind.speed}<p>
+            <p>Description: ${data.weather[0].description}<p>
             `
            
             weatherList.appendChild(newWeather);
