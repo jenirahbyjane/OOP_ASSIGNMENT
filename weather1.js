@@ -20,7 +20,7 @@ weatherButton.addEventListener('click', () => {
             <h2>City: ${data.name}</h2>
             <p>Temprature: ${temperature}°C<p>
             <p>Humidity: ${data.main.humidity}%<p>
-            <p>Wind: ${data.wind.speed}<p>
+            <p>Wind speed: ${data.wind.speed}<p>
             <p>Description: ${data.weather[0].description}<p>
             `
            
@@ -33,5 +33,5 @@ weatherButton.addEventListener('click', () => {
         }
       })
       .catch(error => console.error(error));
-  }
+  }
 });
